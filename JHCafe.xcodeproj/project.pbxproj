@@ -16,6 +16,13 @@
 		E95D891D28E966FC002E1D75 /* JHCafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D891C28E966FC002E1D75 /* JHCafeTests.swift */; };
 		E95D892728E966FC002E1D75 /* JHCafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D892628E966FC002E1D75 /* JHCafeUITests.swift */; };
 		E95D892928E966FC002E1D75 /* JHCafeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D892828E966FC002E1D75 /* JHCafeUITestsLaunchTests.swift */; };
+		E99FF8C52905434A007EA912 /* ReuseViewIdentifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8C42905434A007EA912 /* ReuseViewIdentifierable.swift */; };
+		E99FF8C72905435F007EA912 /* ViewControllerFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8C62905435F007EA912 /* ViewControllerFromStoryboard.swift */; };
+		E99FF8C929054372007EA912 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8C829054372007EA912 /* StoryboardName.swift */; };
+		E99FF8CB2905440D007EA912 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8CA2905440D007EA912 /* BaseViewController.swift */; };
+		E99FF8CD29054426007EA912 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8CC29054426007EA912 /* Constant.swift */; };
+		E99FF8D02905444C007EA912 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8CF2905444C007EA912 /* UIView+Extension.swift */; };
+		E99FF8D22905445B007EA912 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8D12905445B007EA912 /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		E95D892228E966FC002E1D75 /* JHCafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHCafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95D892628E966FC002E1D75 /* JHCafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHCafeUITests.swift; sourceTree = "<group>"; };
 		E95D892828E966FC002E1D75 /* JHCafeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHCafeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E99FF8C42905434A007EA912 /* ReuseViewIdentifierable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseViewIdentifierable.swift; sourceTree = "<group>"; };
+		E99FF8C62905435F007EA912 /* ViewControllerFromStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFromStoryboard.swift; sourceTree = "<group>"; };
+		E99FF8C829054372007EA912 /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		E99FF8CA2905440D007EA912 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E99FF8CC29054426007EA912 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E99FF8CF2905444C007EA912 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E99FF8D12905445B007EA912 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +113,15 @@
 		E95D890428E966FB002E1D75 /* JHCafe */ = {
 			isa = PBXGroup;
 			children = (
+				E99FF8BC290542E7007EA912 /* Common */,
+				E99FF8C0290542FE007EA912 /* View */,
+				E99FF8BF290542FA007EA912 /* Model */,
+				E99FF8BE290542F5007EA912 /* ViewModel */,
+				E99FF8BD290542EB007EA912 /* Network */,
+				E99FF8C129054305007EA912 /* Utils */,
 				E95D890528E966FB002E1D75 /* AppDelegate.swift */,
 				E95D890728E966FB002E1D75 /* SceneDelegate.swift */,
 				E95D890928E966FB002E1D75 /* ViewController.swift */,
-				E95D890B28E966FB002E1D75 /* Main.storyboard */,
 				E95D890E28E966FC002E1D75 /* Assets.xcassets */,
 				E95D891028E966FC002E1D75 /* LaunchScreen.storyboard */,
 				E95D891328E966FC002E1D75 /* Info.plist */,
@@ -125,6 +144,80 @@
 				E95D892828E966FC002E1D75 /* JHCafeUITestsLaunchTests.swift */,
 			);
 			path = JHCafeUITests;
+			sourceTree = "<group>";
+		};
+		E99FF8BC290542E7007EA912 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E99FF8C42905434A007EA912 /* ReuseViewIdentifierable.swift */,
+				E99FF8C62905435F007EA912 /* ViewControllerFromStoryboard.swift */,
+				E99FF8C829054372007EA912 /* StoryboardName.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E99FF8BD290542EB007EA912 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E99FF8BE290542F5007EA912 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E99FF8BF290542FA007EA912 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E99FF8C0290542FE007EA912 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E99FF8C229054327007EA912 /* Intro */,
+				E99FF8C32905432C007EA912 /* Main */,
+				E99FF8CA2905440D007EA912 /* BaseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E99FF8C129054305007EA912 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E99FF8CE29054439007EA912 /* Extension */,
+				E99FF8CC29054426007EA912 /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E99FF8C229054327007EA912 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				E95D890B28E966FB002E1D75 /* Main.storyboard */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		E99FF8C32905432C007EA912 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E99FF8CE29054439007EA912 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E99FF8CF2905444C007EA912 /* UIView+Extension.swift */,
+				E99FF8D12905445B007EA912 /* UITableView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +352,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95D890A28E966FB002E1D75 /* ViewController.swift in Sources */,
+				E99FF8C72905435F007EA912 /* ViewControllerFromStoryboard.swift in Sources */,
 				E95D890628E966FB002E1D75 /* AppDelegate.swift in Sources */,
+				E99FF8D02905444C007EA912 /* UIView+Extension.swift in Sources */,
+				E99FF8CD29054426007EA912 /* Constant.swift in Sources */,
+				E99FF8C929054372007EA912 /* StoryboardName.swift in Sources */,
+				E99FF8C52905434A007EA912 /* ReuseViewIdentifierable.swift in Sources */,
+				E99FF8D22905445B007EA912 /* UITableView+Extension.swift in Sources */,
+				E99FF8CB2905440D007EA912 /* BaseViewController.swift in Sources */,
 				E95D890828E966FB002E1D75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,9 +551,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.com.JHCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,9 +581,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.com.JHCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
