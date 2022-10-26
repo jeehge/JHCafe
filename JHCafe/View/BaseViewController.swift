@@ -5,9 +5,10 @@
 //  Created by JH on 2022/10/23.
 //
 
-import UIKit
+import Foundation
 import SnapKit
 import Then
+import UIKit
 
 class BaseViewController: UIViewController, ViewControllerFromStoryBoard {
 	

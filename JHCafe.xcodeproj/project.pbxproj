@@ -25,9 +25,9 @@
 		E99FF8D22905445B007EA912 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8D12905445B007EA912 /* UITableView+Extension.swift */; };
 		E99FF8D429054699007EA912 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8D329054699007EA912 /* IntroViewController.swift */; };
 		E99FF8D62908204B007EA912 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8D52908204B007EA912 /* MainViewController.swift */; };
-		E99FF8D929082929007EA912 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8D829082929007EA912 /* SnapKit */; };
-		E99FF8DB29082929007EA912 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8DA29082929007EA912 /* SnapKit-Dynamic */; };
-		E99FF8DE2908295F007EA912 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8DD2908295F007EA912 /* Then */; };
+		E99FF8E229097789007EA912 /* 39177-coffee-beans.json in Resources */ = {isa = PBXBuildFile; fileRef = E99FF8E129097789007EA912 /* 39177-coffee-beans.json */; };
+		E99FF8EA29097DFF007EA912 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8E929097DFF007EA912 /* Then */; };
+		E99FF8EC29097E02007EA912 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8EB29097E02007EA912 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +70,7 @@
 		E99FF8D12905445B007EA912 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		E99FF8D329054699007EA912 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		E99FF8D52908204B007EA912 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E99FF8E129097789007EA912 /* 39177-coffee-beans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "39177-coffee-beans.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99FF8D929082929007EA912 /* SnapKit in Frameworks */,
-				E99FF8DE2908295F007EA912 /* Then in Frameworks */,
-				E99FF8DB29082929007EA912 /* SnapKit-Dynamic in Frameworks */,
+				E99FF8EA29097DFF007EA912 /* Then in Frameworks */,
+				E99FF8EC29097E02007EA912 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +107,7 @@
 				E95D891B28E966FC002E1D75 /* JHCafeTests */,
 				E95D892528E966FC002E1D75 /* JHCafeUITests */,
 				E95D890328E966FB002E1D75 /* Products */,
+				E99FF8E629097D57007EA912 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +160,7 @@
 		E99FF8BC290542E7007EA912 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E99FF8E129097789007EA912 /* 39177-coffee-beans.json */,
 				E99FF8C42905434A007EA912 /* ReuseViewIdentifierable.swift */,
 				E99FF8C62905435F007EA912 /* ViewControllerFromStoryboard.swift */,
 				E99FF8C829054372007EA912 /* StoryboardName.swift */,
@@ -232,6 +234,13 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		E99FF8E629097D57007EA912 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,9 +258,8 @@
 			);
 			name = JHCafe;
 			packageProductDependencies = (
-				E99FF8D829082929007EA912 /* SnapKit */,
-				E99FF8DA29082929007EA912 /* SnapKit-Dynamic */,
-				E99FF8DD2908295F007EA912 /* Then */,
+				E99FF8E929097DFF007EA912 /* Then */,
+				E99FF8EB29097E02007EA912 /* SnapKit */,
 			);
 			productName = JHCafe;
 			productReference = E95D890228E966FB002E1D75 /* JHCafe.app */;
@@ -328,6 +336,7 @@
 			packageReferences = (
 				E99FF8D729082929007EA912 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				E99FF8DC2908295E007EA912 /* XCRemoteSwiftPackageReference "Then" */,
+				E99FF8E329097AFF007EA912 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = E95D890328E966FB002E1D75 /* Products */;
 			projectDirPath = "";
@@ -346,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95D891228E966FC002E1D75 /* LaunchScreen.storyboard in Resources */,
+				E99FF8E229097789007EA912 /* 39177-coffee-beans.json in Resources */,
 				E95D890F28E966FC002E1D75 /* Assets.xcassets in Resources */,
 				E95D890D28E966FB002E1D75 /* Intro.storyboard in Resources */,
 			);
@@ -745,23 +755,26 @@
 				kind = branch;
 			};
 		};
+		E99FF8E329097AFF007EA912 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E99FF8D829082929007EA912 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E99FF8D729082929007EA912 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		E99FF8DA29082929007EA912 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E99FF8D729082929007EA912 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
-		E99FF8DD2908295F007EA912 /* Then */ = {
+		E99FF8E929097DFF007EA912 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E99FF8DC2908295E007EA912 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		E99FF8EB29097E02007EA912 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E99FF8D729082929007EA912 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
