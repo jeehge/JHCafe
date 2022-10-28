@@ -28,6 +28,7 @@
 		E99FF8E229097789007EA912 /* 39177-coffee-beans.json in Resources */ = {isa = PBXBuildFile; fileRef = E99FF8E129097789007EA912 /* 39177-coffee-beans.json */; };
 		E99FF8EA29097DFF007EA912 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8E929097DFF007EA912 /* Then */; };
 		E99FF8EC29097E02007EA912 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8EB29097E02007EA912 /* SnapKit */; };
+		E99FF8F0290A03BA007EA912 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8EF290A03BA007EA912 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 			files = (
 				E99FF8EA29097DFF007EA912 /* Then in Frameworks */,
 				E99FF8EC29097E02007EA912 /* SnapKit in Frameworks */,
+				E99FF8F0290A03BA007EA912 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +262,7 @@
 			packageProductDependencies = (
 				E99FF8E929097DFF007EA912 /* Then */,
 				E99FF8EB29097E02007EA912 /* SnapKit */,
+				E99FF8EF290A03BA007EA912 /* Lottie */,
 			);
 			productName = JHCafe;
 			productReference = E95D890228E966FB002E1D75 /* JHCafe.app */;
@@ -775,6 +778,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E99FF8D729082929007EA912 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		E99FF8EF290A03BA007EA912 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E99FF8E329097AFF007EA912 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
