@@ -29,6 +29,7 @@
 		E99FF8EA29097DFF007EA912 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8E929097DFF007EA912 /* Then */; };
 		E99FF8EC29097E02007EA912 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8EB29097E02007EA912 /* SnapKit */; };
 		E99FF8F0290A03BA007EA912 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E99FF8EF290A03BA007EA912 /* Lottie */; };
+		E9E52B742917EA4800BD1021 /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E52B732917EA4800BD1021 /* StoreCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		E99FF8D329054699007EA912 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		E99FF8D52908204B007EA912 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E99FF8E129097789007EA912 /* 39177-coffee-beans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "39177-coffee-beans.json"; sourceTree = "<group>"; };
+		E9E52B732917EA4800BD1021 /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		E99FF8C32905432C007EA912 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E9E52B732917EA4800BD1021 /* StoreCell.swift */,
 				E99FF8D52908204B007EA912 /* MainViewController.swift */,
 			);
 			path = Main;
@@ -395,6 +398,7 @@
 				E99FF8C52905434A007EA912 /* ReuseViewIdentifierable.swift in Sources */,
 				E99FF8D22905445B007EA912 /* UITableView+Extension.swift in Sources */,
 				E99FF8D429054699007EA912 /* IntroViewController.swift in Sources */,
+				E9E52B742917EA4800BD1021 /* StoreCell.swift in Sources */,
 				E99FF8CB2905440D007EA912 /* BaseViewController.swift in Sources */,
 				E95D890828E966FB002E1D75 /* SceneDelegate.swift in Sources */,
 			);
